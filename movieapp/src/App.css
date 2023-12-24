@@ -33,35 +33,11 @@ body{
 .overlay {
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
-  width: 84%;
+  width: 100%;
   transition: 0.5s ease;
   opacity: 0;
   bottom: 0;
   font-size: 20px;
   padding: 20px;
   text-align: center;
-}
-
-.movie-info{
-  place-items: center;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.movie-header{
-  margin: 20px 0;
-  text-align: center;
-  font-family: cursive;
-}
-
-.movieDetails {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1.2em;
-}
-
-.movieDetails footer{
-  font-family: monospace;
 }
