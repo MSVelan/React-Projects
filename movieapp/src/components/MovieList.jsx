@@ -1,10 +1,14 @@
+import { Link } from "react-router-dom";
+
 const MovieList = (props)=>{
     const FavouriteComponent = props.favouriteComponent;
     return (
         <>
             {props.movies.map((movie,index)=>(
                 <div className="image-container justify-content-start m-3 d-flex" style={{maxWidth: '360px'}} key={index}>
-                    <img src={movie.Poster} alt="movie" onClick={(movie) => props.displayInfo(movie)}/>
+                    <Link to={`movie/${movie.imdbID}`}>
+                        <img src={movie.Poster} alt="movie" style={{height: "450"}}/>
+                    </Link>
                     <div onClick={() => props.handleFavouritesClick(movie)} className="overlay d-flex align-items-center justify-content-center">
                         <FavouriteComponent />
                     </div>
